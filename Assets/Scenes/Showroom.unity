@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: e4fd0fc8859dfa4478f7d07849b10ed6, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -356,6 +356,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Velocity: {x: 0, y: 0, z: 5}
+--- !u!114 &161937145 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4209503037253980316, guid: 92e8f62821d98b240958169965ebe2e7, type: 3}
+  m_PrefabInstance: {fileID: 4209503037411386981}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fd4d3882ad71bc4b996b858fd017fc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &169318832
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -861,7 +872,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 530969722}
-  - component: {fileID: 530969721}
   m_Layer: 0
   m_Name: 360 video button
   m_TagString: Untagged
@@ -869,18 +879,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &530969721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 530969720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 132b009c15dad7e46b1e0ebeee51b698, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &530969722
 Transform:
   m_ObjectHideFlags: 0
@@ -1344,6 +1342,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7179462289238023466, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477793987801566298, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1997,6 +1999,11 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 2871854915733156393, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
   m_PrefabInstance: {fileID: 598668439}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &706866952 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2871854915733156396, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
+  m_PrefabInstance: {fileID: 598668439}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &719664157 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 960792322372171645, guid: 866df7211cecc19458e01b780489acfd, type: 3}
@@ -2085,6 +2092,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4415745982179208543, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
       propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4415745982179208543, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
+      propertyPath: m_WaitForFirstFrame
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4941219564456579801, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
@@ -3448,14 +3459,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 530969721}
-        m_TargetAssemblyTypeName: video360, Assembly-CSharp
-        m_MethodName: Begin360Video
-        m_Mode: 1
+      - m_Target: {fileID: 161937145}
+        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
+        m_MethodName: FadeToScene
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3660,6 +3671,67 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5759229112245566949, guid: 60659bdd2d735b847aa22ebdb3b4c4b5, type: 3}
   m_PrefabInstance: {fileID: 6673510802272604378}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4209503037411386981
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 706866952}
+    m_Modifications:
+    - target: {fileID: 4209503036902337405, guid: 92e8f62821d98b240958169965ebe2e7, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 706866948}
+    - target: {fileID: 4209503037253980306, guid: 92e8f62821d98b240958169965ebe2e7, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209503037253980306, guid: 92e8f62821d98b240958169965ebe2e7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209503037253980306, guid: 92e8f62821d98b240958169965ebe2e7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209503037253980306, guid: 92e8f62821d98b240958169965ebe2e7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.012
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209503037253980306, guid: 92e8f62821d98b240958169965ebe2e7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209503037253980306, guid: 92e8f62821d98b240958169965ebe2e7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209503037253980306, guid: 92e8f62821d98b240958169965ebe2e7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209503037253980306, guid: 92e8f62821d98b240958169965ebe2e7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209503037253980306, guid: 92e8f62821d98b240958169965ebe2e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209503037253980306, guid: 92e8f62821d98b240958169965ebe2e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209503037253980306, guid: 92e8f62821d98b240958169965ebe2e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209503037253980307, guid: 92e8f62821d98b240958169965ebe2e7, type: 3}
+      propertyPath: m_Name
+      value: FadeController
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 92e8f62821d98b240958169965ebe2e7, type: 3}
 --- !u!1001 &5222399289997472909
 PrefabInstance:
   m_ObjectHideFlags: 0
