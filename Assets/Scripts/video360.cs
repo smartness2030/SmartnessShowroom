@@ -10,6 +10,8 @@ public class video360 : MonoBehaviour
     public GameObject pauseImage;
     public VideoPlayer videoPlayer;
 
+    public SceneChanger sceneChanger;
+
     private bool videoIsOn = false;
 
 
@@ -20,6 +22,14 @@ public class video360 : MonoBehaviour
         videoIsOn = !videoIsOn;
         playImage.SetActive(!videoIsOn);
         pauseImage.SetActive(videoIsOn);
+        if (videoIsOn)
+        {
+            videoPlayer.Play();
+        }
+        else
+        {
+            sceneChanger.FadeToScene(0);
+        }
     }
 
     public void Begin360Video()
