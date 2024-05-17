@@ -287,14 +287,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 291610150}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.7933532, y: -0, z: -0, w: 0.6087617}
   m_LocalPosition: {x: 0.040391352, y: 1.2512633, z: 1.2294022}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 105, y: 0, z: 0}
 --- !u!114 &305657813 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4209503037253980316, guid: 92e8f62821d98b240958169965ebe2e7, type: 3}
@@ -1067,7 +1067,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -1075,11 +1075,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 0.7532916, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0.69598204, b: 0.87169814, a: 1}
-    m_PressedColor: {r: 0, g: 0.39071044, b: 0.7660377, a: 1}
-    m_SelectedColor: {r: 0, g: 0.75294125, b: 1, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_NormalColor: {r: 0.08627451, g: 0.45490196, b: 0.73333335, a: 1}
+    m_HighlightedColor: {r: 0.56078434, g: 0.78039217, b: 0.2509804, a: 1}
+    m_PressedColor: {r: 0.56078434, g: 0.78039217, b: 0.2509804, a: 1}
+    m_SelectedColor: {r: 0.08627451, g: 0.45490196, b: 0.73333335, a: 1}
+    m_DisabledColor: {r: 0.4627451, g: 0.4627451, b: 0.4627451, a: 0.5882353}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
