@@ -8,12 +8,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 55daccc09a3b69647bbab145b54a3ab3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Showroom.unity
     guid: 7f3456b57cbaeec429d28e61b6c8c234
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Video360.unity
     guid: 6cad2184e3c64a1478681dfe39686d79
+  - enabled: 1
+    path: Assets/Scenes/PointCloud.unity
+    guid: f2adee12e4af6d54688acf7d8f0f6f5b
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: dc5a169419fa04987b057f65238cf3ba, type: 2}
