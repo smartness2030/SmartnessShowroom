@@ -8,10 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 55daccc09a3b69647bbab145b54a3ab3
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Showroom.unity
     guid: 7f3456b57cbaeec429d28e61b6c8c234
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Video360.unity
     guid: 6cad2184e3c64a1478681dfe39686d79
   - enabled: 0
@@ -20,7 +20,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/com.egemenertugrul.pointcloudplayer@1.0.16/Runtime/PointCloudPlayer_ExampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PointCloud2.unity
     guid: ad32a61189d883f48a22cc700a98dee9
   m_configObjects:
