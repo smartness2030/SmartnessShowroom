@@ -4939,8 +4939,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 453374634}
   pointerEventSource: {fileID: 453374633}
-  webViewSize: {x: 300, y: 400}
-  textureSize: {x: 1200, y: 1600}
+  webViewSize: {x: 800, y: 1200}
+  textureSize: {x: 800, y: 1200}
   intervalSec: 0.05
   keyboardEnabled: 1
   urlChanged:
